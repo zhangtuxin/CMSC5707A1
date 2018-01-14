@@ -1,14 +1,13 @@
-a = [5 0 0 0 0 0;1 0 0 0 0 0; 4 0 0 0 0 0;1 0 0 0 0 0;3 0 0 0 0 0;0 8 3 7 6 1];
-%a = [3 0 0 0 0 0;5 0 0 0 0 0; 6 0 0 0 0 0;2 0 0 0 0 0;9 0 0 0 0 0;0 8 3 7 6 1];
+%a = [5 0 0 0 0 0;1 0 0 0 0 0; 4 0 0 0 0 0;1 0 0 0 0 0;3 0 0 0 0 0;0 8 3 7 6 1];
+a = [3 0 0 0 0 0;5 0 0 0 0 0; 6 0 0 0 0 0;2 0 0 0 0 0;9 0 0 0 0 0;0 8 3 7 6 1];
 for i = 1:5
     for j = 2:6
-        %a(i,j) = abs( (a(i,1) - a(6,j))^2 );
-        a(i,j) = abs( (a(i,1) - a(6,j)) );
+        a(i,j) = abs( (a(i,1) - a(6,j))^2 );
     end
 end
 disp("dis matrix is " )
 disp(a)
-disp("============== Distortion Matrix for ONE Compare with Unknown input ")
+disp("============== delete 1st row and 6th col")
 b = a(1:5,2:6);
 disp(b)
 
@@ -54,7 +53,7 @@ for j = 1:5
         
     end
 end
-disp("============== accumlatiom matrix for ONE Compare with Unknown input")
+disp("============== accl matrix is")
 
 disp(b)
 
